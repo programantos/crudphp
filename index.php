@@ -2,7 +2,7 @@
 // memanggil database //
 include_once('config.php'); //include_once dan include required;
 //include_once('namafile');
-$result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC");
+$result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id ASC");
 //$result=tempat menampung data database kita, mysqli_query untuk memanggil data dari datbase kita, ada 2 paramater mysqli_query(parameter 1,parameter 2), biasakan pakai huruf kapital saat membuat query, jika tidak mau semua di tampilkan gunakan SELECT nama, umur, alamat aja ,,, ORDER BY =diurutkan berdasarkan/ mengurutkan berdasarkan 'id'/'alamat'/dll,,, DESC =berdasarkan data terbaru yang di input, ASC =berdasarkan urutan terkecil atau dari atas ,,
 // $apa=mysqli_fetch_array($result);
 // print_r('<pre>');
@@ -35,7 +35,10 @@ $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC");
 				<td><?php echo $res['nama']?></td><!--ini akan menampilkan data di datanase-->
 				<td><?php echo $res['umur']?></td>
 				<td><?php echo $res['alamat']?></td>
-				<td><a href="edit.php?id=<?php echo $res[id]?>">edit</a>
+				<td>
+				<a href="edit.php?id=<?php echo $res[id]?>">edit</a>
+				<a href="delet.php?id=<?php echo $res[id]?>">delete</a>
+
 
 				</td>
 			</tr>
