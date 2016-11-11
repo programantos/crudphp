@@ -16,6 +16,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id ASC");
 	<title>belajar CRUD</title>
 </head>
 <body>
+<a href="add.php">insert new</a>
 <table width="80%" border="1">
 	<thead>
 		<tr><!--ini akan menjadi judul tabel-->
