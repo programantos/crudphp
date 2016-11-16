@@ -37,8 +37,8 @@ $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id ASC");
 				<td><?php echo $res['umur']?></td>
 				<td><?php echo $res['alamat']?></td>
 				<td>
-				<a href="edit.php?id=<?php echo $res[id]?>">edit</a>
-				<a href="delet.php?id=<?php echo $res[id]?>">delete</a>
+				<a href="edit.php?id=<?php echo $res['id']?>">edit</a>
+				<a href="delet.php?id=<?php echo $res['id']?>">delete</a>
 
 
 				</td>
