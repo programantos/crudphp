@@ -4,7 +4,7 @@
 $databasehost='localhost';//kalau di alamat web maka menggunakan alamat web tujuan.
 $databasename= 'crud';
 $databaseUsername='root';
-$databasepassword='mantos';
+$databasepassword='';
 $mysqli = mysqli_connect($databasehost, $databaseUsername, $databasepassword, $databasename) or die ('not conected to sql');
 
 //vachar = "sultan dika, del piero";
